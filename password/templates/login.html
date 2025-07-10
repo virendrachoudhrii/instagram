@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="{{ url_for('static', filename='Images/INSTA-MINILOGO.jpeg') }}" />
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Instagram</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="/image/mobileImage.jpeg" alt="" />
+    </div>
+    <div class="right-section">
+      <div class="login-box">
+        <img src="/image/instaTextLogo.png" alt="" class="instaTextLogo" />
+        <form method="POST" action="/">
+          <input
+            type="text"
+            name="username"
+            placeholder="Email address, username, phone number"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button class="login-btn" type="submit">Log in</button>
+        </form>
+        <div class="divider">
+          <hr class="line" />
+          <p>OR</p>
+          <hr class="line" />
+        </div>
+        <div class="login-with-facebook">
+          <img src="/image/fbicon.png" alt="" class="fb-img" />
+          <a href="#" class="facebook-login">Log in with Facebook</a>
+        </div>
+        <div>
+          <a href="#" class="forgot-password">Forgotten your password?</a>
+        </div>
+      </div>
+      <div class="signup-box">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+      <div class="download-section">
+        <p>Get the app</p>
+        <div class="app-buttons">
+          <img src="/image/playstore.png" alt="" class="app-btn"/>
+          <img src="/image/appstore.png" alt="" class="app-btn" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
